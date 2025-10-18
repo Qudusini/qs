@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.container-lg{
+    max-width: 1400px;
+}
+
+.container-sm{
+    max-width: 1400px;
+}
+
+.header{
+    margin-top: 10px;
+}
+.header .logo{
+    width: 100px;
+    
+}
+
+.header .header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .main-menu{
+display: flex;
+gap: 1rem;
+}
+
+.header .main-menu a{
+    padding: 0.5rem 1rem;
+}
+
+.header .main-menu a:hover{
+    background-color: burlywood;
+}
+
+.current{
+    background-color: burlywood;
+    font-size: 600;
+}
+.hero{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h2{
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+.bg-primary {
+    background-color: burlywood;
+    padding: 0 0.3rem;
+}
+
+.gallery-flex{
+margin-top: 5px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+.gallery-item{
+    width: calc(33.333% - 20px);
+    
+}
+.gallery-item img{
+    width: 300px;
+    height: 300px;
+    filter: grayscale(250%);
+    border-radius: 10px;
+}
+
+.footer{
+    border-top: 1px solid black;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+}
+.footer .footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    width: 120px;
+
+}
+.service{
+    background-color: rgb(4, 4, 4);
+    color: white;
+    padding: 3rem 0 4rem;
+}
+.container{
+    display: flex;
+    gap: 1rem;
+}
+.service-flex h4{
+font-size: 1.1rem;
+margin-bottom: 30px;
+}
+.section-heading{
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.our-team {
+    text-align: center;
+
+}
+
+.team{
+    padding: 3rem 0 4rem;
+}
+
+.team-flex{
+    display: flex;
+    gap: 100px;
+    
+}
+
+.team img{
+    width: 500px;
+    height: 300px;
+    padding-left: 15px;
+}
+.team-item p,
+.team-item h4{
+    padding-left: 15px;
+}
+.bg-black{
+    background: black;
+    color: white;
+}
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height:1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width:1px;
+}
+.section-heading {
+    text-align: center;
+}
+.contact{
+    padding: 3rem;
+}
+.contact p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group{
+    margin: 2rem 0;
+}
+.contact input,
+.contact textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding-bottom: 1rem;
+}
+.contact textarea{
+    height: 200px;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    outline: 0;
+}
+.btn {
+    display: inline-block;
+    Padding: 1rem 2rem;
+    border: 1px solid black;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.contact button{
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .header.header-flex{
+        flex-direction: column;
+        gap:1.5rem;
+    }
+}
